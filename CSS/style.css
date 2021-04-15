@@ -491,6 +491,7 @@ body {
 }
 footer {
   display: flex;
+  padding-top: 40px;
 }
 .footer-wrap {
   display: flex;
