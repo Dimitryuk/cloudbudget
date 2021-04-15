@@ -4,6 +4,7 @@
   --primary-text-color: #000000;
   --secondary-text-color: rgba(16, 16, 16, 0.08);
   --secondary-background-color: #fafafa;
+  --grid-item: 3;
 }
 
 ul {
@@ -44,9 +45,9 @@ body {
 }
 
 .container {
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 1440px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1140px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -111,7 +112,7 @@ body {
   background-image: url(../images/cloud.png);
   width: 25px;
   height: 17px;
-  margin-left: 165px;
+  /* margin-left: 165px; */
   margin-right: 7px;
 }
 .head-part {
@@ -184,4 +185,239 @@ body {
 
 .video-element {
   margin-top: 94px;
+}
+.section-video {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Features */
+.features-section {
+  background-color: #fafafa;
+  padding-top: 63px;
+}
+.features-list {
+  display: flex;
+}
+.features-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  margin-bottom: 63px;
+}
+
+.features-item:not(:last-child) {
+  margin-right: 30px;
+}
+.feature-item-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.features-thumb {
+  position: relative;
+  width: 350px;
+  height: 355px;
+}
+.features-thumb-describe {
+  position: absolute;
+  top: 157px;
+  left: 29px;
+  padding-top: 33px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  background: #ffffff;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 293px;
+  height: 198px;
+  text-align: center;
+}
+
+.feature-item-describe {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+}
+.features-link {
+  text-transform: capitalize;
+  color: var(--accent-color);
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 150%;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Technology */
+.Technology-title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+.technology-section {
+  padding-top: 65px;
+  padding-bottom: 105px;
+  padding-left: 165px;
+  padding-right: 165px;
+}
+.technology-list {
+  display: flex;
+}
+
+.technology-list-item {
+  width: 255px;
+  height: 226px;
+  text-align: center;
+  position: relative;
+}
+.technology-list-item-title-number {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 120px;
+  text-align: center;
+  color: rgba(16, 16, 16, 0.08);
+  position: absolute;
+  left: 25%;
+  top: -25%;
+}
+.technology-list-item-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #101010;
+}
+.technology-list-item > p {
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+}
+.technology-icon {
+  fill: var(--accent-color);
+}
+.technology-list-item:not(:last-child) {
+  margin-right: 60px;
+}
+
+/* app-section */
+.app-section {
+  background-color: var(--accent-color);
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.app-section-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  color: var(--white-text-color);
+  margin-bottom: 24px;
+  display: block;
+  width: 445px;
+  height: 105px;
+}
+.app-section-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  color: var(--white-text-color);
+  text-align: justify;
+  display: block;
+  width: 445px;
+  height: 64px;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+.app-section-wrapper {
+  display: flex;
+}
+.app-section-images {
+  position: relative;
+  width: 533px;
+  height: 311px;
+  margin-left: 81px;
+}
+
+.app-img1 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 100;
+}
+.app-img2 {
+  position: absolute;
+  left: 150px;
+  top: 0px;
+  z-index: 90;
+}
+
+.app-img3 {
+  position: absolute;
+  left: 44px;
+  top: -22px;
+  border-radius: 15px;
+  z-index: 110;
+}
+
+.applications-link > svg {
+  fill: var(--white-text-color);
+}
+
+.applications-link:not(:last-child) {
+  margin-right: 23px;
+}
+.applications-link:hover svg {
+  fill: aqua;
+}
+
+/* Contact us section */
+.contact-us-section {
+  padding-top: 115px;
+  padding-bottom: 78px;
+}
+.contact-us-title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  color: var(--primary-text-color);
+  margin-bottom: 53px;
+}
+.contact-us-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: justify;
+}
+.contact-us-text-wrapper {
+  width: 445px;
+  height: 160px;
+}
+
+/* Forms */
+.form-field {
+  /* position: relative;
+  z-index: 5; */
+}
+.form-select {
+  /* position: absolute;
+  right: 5%;
+  top: 0;
+  z-index: 10;
+  display: block;
+  outline: none;
+  border: none; */
 }
